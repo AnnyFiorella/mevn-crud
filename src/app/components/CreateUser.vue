@@ -118,7 +118,7 @@ import DatePicker from 'vue2-datepicker'
              * al componente DisplayUsers
              */ 
             addUser() {
-                this.axios.post('/user', this.user)
+                this.axios.post('https://griddb.herokuapp.com/material', this.user)
                     .then(res => {
                         this.$router.replace({name: 'DisplayUsers'});
                     })
